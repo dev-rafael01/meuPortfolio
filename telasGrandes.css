@@ -21,4 +21,26 @@
         max-width: 3200px; /* Definindo o tamanho máximo para o header */
         min-width: 1600px;        
     }
+
+    /* === MENU DE CERTIFICADOS - TELAS GRANDES === */
+@media (min-aspect-ratio: 16/9) and (min-width: 1600px) {
+  #certificados-container.certificados-aberto {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .certificados-menu-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  #inicio h3 {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
 }

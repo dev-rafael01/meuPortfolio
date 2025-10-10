@@ -45,6 +45,46 @@ header {
     width: 100%;
     z-index: 1000;
 }
+
+/* Meu de certificados  */
+#certificados-container.certificados-fechado {
+  display: none;
+}
+
+#certificados-container.certificados-aberto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.certificados-menu-icon {
+  cursor: pointer;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.certificados-menu-icon.girado {
+  transform: rotate(90deg);
+}
+
+/* Animação ao abrir */
+
+#certificados-container.certificados-aberto {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   
 header h1 {
     display: inline-block;
@@ -54,6 +94,7 @@ header h1 {
 #navbar {
     display: flex;
     gap: 20px;
+    transition: all 0.3s ease;
 }
 
 .menu-icon {
@@ -87,8 +128,6 @@ section {
     margin: 0 auto;
     margin-top: 120px;
     scroll-margin-top: 100px; /* ou a altura real do seu header */
- 
-
 
 }
 
