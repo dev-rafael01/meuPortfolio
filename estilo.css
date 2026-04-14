@@ -139,6 +139,297 @@ h2 {
 }
 
 .perfil {
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projeto {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#habilidades {
+    text-align: center;
+}
+
+.habilidade {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 1rem;
+}
+
+.habilidade a img {
+    transition: transform 0.3s ease;
+}
+
+.habilidade a:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilo da seção de Currículo */
+#curriculo {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.curriculo-resumo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculo-box {
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.curriculo-box h3 {
+    margin-bottom: 1.5rem;
+}
+
+.curriculo-box p {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+
+.button {
+    background-color:  #0376f1;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#contato {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+.contado1 {
+    margin-bottom: 1.5rem;
+}
+
+.contado1 a {
+    color: #0376f1;
+    text-decoration: none;
+}
+
+.contado1 a:hover {
+    color: #0376f1;
+    text-decoration: underline;
+}
+
+.texto strong {
+    color: #0376f1;
+}
+
+.redes h2 {
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+footer {
+    background-color: #0a192f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Reset de margens e paddings para garantir uma base limpa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+  
+/* Aplica a fonte base para todo o site */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+  
+/* Títulos com destaque */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #007bff;
+}
+  
+/* Links */
+a {
+    font-family: 'Inter', sans-serif;
+    color: #007bff;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+  
+header {
+    background-color: #0a192f;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Meu de certificados  */
+#certificados-container.certificados-fechado {
+  display: none;
+}
+
+#certificados-container.certificados-aberto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.certificados-menu-icon {
+  cursor: pointer;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.certificados-menu-icon.girado {
+  transform: rotate(90deg);
+}
+
+/* Animação ao abrir */
+
+#certificados-container.certificados-aberto {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  
+header h1 {
+    display: inline-block;
+    font-size: 1.8rem;
+}
+
+#navbar {
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+section {
+    padding: 1.5rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 120px;
+    scroll-margin-top: 100px; /* ou a altura real do seu header */
+
+}
+
+
+h2 {
+    color: #007bff;
+    text-align: center;
+   
+}
+
+.perfil {
     width: 320px;
     height: 320px;
     border-radius: 50%;
