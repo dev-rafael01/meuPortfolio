@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/icones/tecnologia.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link rel="stylesheet" href="telasGrandes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <title>Meu Portfólio</title>
+</head>
+
+<body>
+    <header>
+        <h1>RAFAEL SANTOS</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <img src="/icones/icons8-cardápio-64.png" alt="menu" width="30" height="30">
+        </div>
+
+        <nav id="navbar">
+            <a href="#inicio">Início</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#curriculo">Currículo</a>
+            <a href="#contato">Contato | Redes Sociais</a>
+        </nav>
+    </header>
+        
+        <main>
+            <section id="inicio">
+                <h2>Bem-vindo ao meu portfólio</h2>
+                   <h3> 
+                    <p>Certificados</p>
+                    <img src="https://img.icons8.com/?size=100&id=OTxpMqWbm71F&format=png&color=000000" 
+                     alt="Menu Certificados" 
+                     class="certificados-menu-icon" 
+                     width="24" 
+                     height="24"
+                     onclick="toggleCertificadosMenu()">
+                  </h3>
+                    <div id="certificados-container" class="certificados-fechado">
+                        <a href="/pdf/Certificado JavaScript.pdf" class="button" target="_blank">JavaScript</a>
+                        <a href="/pdf/Certificado HTML5-e-CSS3.pdf" class="button" target="_blank">HTML & CSS</a>
+                        <a href="/pdf/Git & GitHub b7Web.pdf" class="button" target="_blank">Git & GitHub</a>
+                        <a href="/pdf/SQL DO ZERO.pdf" class="button" target="_blank">SQL</a>
+                        <a href="/pdf/Ceritificado Logica de Programação.pdf" class="button" target="_blank">Logica de Programação</a>
+                          <a href="/pdf/Orientação a objetos PHP.pdf" class="button" target="_blank">Programação PHP (POO)</a>
+                    </div>
+            </section>
+            <section id="projetos">
+                <h2>Meus Projetos</h2>
+                <div class="projetos-container">
+                    <div class="projeto">
+                        <p>Cristiano Ronaldo</p>
+                        <img src="/Imagem/Cristiano Ronaldo.PNG" alt="Projeto 1">
+                        <a href="https://github.com/rafa-backend/projeto-pessoal" target="_blank">Repositorio</a>
+                        <a href="https://projeto-pessoal-mu-eight.vercel.app/" target="_blank">Projeto</a>
+                    </div>
+            
+                    <div class="projeto">
+                        <p>Android</p>
+                        <img src="/Imagem/celular.PNG" alt="Projeto 2">
+                        <a href="https://github.com/rafa-backend/projeto-redes-sociais" target="_blank">Repositorio</a>
+                        <a href="https://projeto-redes-sociais-psi.vercel.app/" target="_blank">Projeto</a>
+                    </div>
+                    <div class="projeto">
+                        <p>Jogo de ataque</p>
+                        <br>
+                        <img src="/Imagem/Joguinho.PNG" alt="Projeto 3">
+                        <a href="https://github.com/rafa-backend/Projeto-luta-B7WEB" target="_blank">Repositorio</a>
+                        <a href="https://jogodeluta.vercel.app/" target="_blank">Projeto</a>
+                    </div>
+                    <div class="projeto">
+                        <p>the last uf us</p>
+                        <br>
+                        <img src="/Imagem/The Last of Us.PNG" alt="Projeto 4">
+                        <a href="https://github.com/rafa-backend/the-lest-of-us.git" target="_blank">Repositorio</a>
+                        <a href="https://the-lest-of-us.vercel.app/" target="_blank">Projeto</a>
+                    </div>
+                </div>
+            </section>
+            <section id="habilidades">
+                <h2>Minhas Habilidades</h2>
+                <div class="habilidade">
+
+                <a target="_blank"><img src="https://img.icons8.com/?size=100&id=23028&format=png&color=1A1A1A" 
+                alt="HTML" width="64" height="64"></a>
+
+                <a target="_blank"><img src="https://img.icons8.com/?size=100&id=38272&format=png&color=1A1A1A" 
+                alt="CSS" width="64" height="64"></a>
+
+                <a target="_blank"><img src="https://img.icons8.com/?size=100&id=39854&format=png&color=1A1A1A"
+                alt="JavaScript" width="64" height="64"></a>
+
+                <a target="_blank"><img src="https://img.icons8.com/?size=100&id=38389&format=png&color=1A1A1A" 
+                alt="GIT" width="64" height="64"></a>
+
+                <a target="_blank"><img src="https://img.icons8.com/?size=100&id=12599&format=png&color=1A1A1A" 
+                alt="GitHub" width="64" height="64"></a>
+
+                <a target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-plain-wordmark.svg" alt="SQL" width="64" height="64"/></a>
+
+                <a target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-plain.svg" alt="PHP" width="64" height="64"></a>
+          
+            </div>
+                </section>
+            
+                <section id="sobre">
+            <h2>Sobre mim</h2>
+            <img src="/Imagem/FotoNova.jpeg" alt="Minha foto" class="perfil">
+            <p>
+               Sou o Rafael Santos, tenho 29 anos e  atualmente estudante de Análise e Desenvolvimento de Sistemas, com formação Técnica em Informática (Senac). Conhecimentos em desenvolvimento web Front-end (HTML5, CSS3, JavaScript) e Back-end (PHP, Laravel, SQL). Familiaridade com POO, lógica de programação e versionamento com Git/GitHub. Busco oportunidade como Estagiário ou Desenvolvedor Júnior para evoluir em projetos de desenvolvimento web.
+
+                Meu objetivo é evoluir como desenvolvedor e contribuir para projetos que gerem impacto positivo por meio da tecnologia.
+            </p>
+                </section>
+            
+                <section id="curriculo">
+            <h2>Currículo</h2>
+            <div class="curriculo-resumo">
+                <div class="curriculo-box">
+                    <h3>Veja meu currículo</h3>
+                    <p><strong>Formação:</strong>
+                        <br>
+                        Técnico em Informática – Senac Santo André | Concluído
+                        <br>
+                        <br>
+                        Análise e Desenvolvimento de Sistemas | Cursando | término 06.2027
+                        <br>
+                    </p>
+                    <p><strong>Experiência:</strong>
+                        <br>
+                        Das brasil
+                        <strong>Cargo:</strong>
+                        Supervisor de Operação | 07/23 - Atual - CLT
+                        <br>
+                        <br>
+                        <p><strong>Qualificações Adicionais</strong><br>
+                        -> HTML, CSS e JavaScript <strong>Front-End</strong><br> 
+                        -> Git & GitHub <br>
+                        -> SQL  <br> 
+                        -> Logica de Programação <br>
+                        -> PHP E LARAVEL <strong>Back-end</strong><br>
+                         
+                        </p>
+                    </p>
+                    <p><strong>Habilidades:</strong>
+                        Boa Comunicação, CNH categoria A|B, Vontade de aprender, Boa Adaptabilidade, Bom
+                        desenvolvimento em equipes.
+                    </p>
+                    <!-- Links para as opções -->
+                    <div class="button-container">
+                        <a href="/pdf/Rafael Santos Desenvolvedor.pdf" class="button" download="Rafael Santos">Baixar
+                            Currículo</a>
+                        <a href="/pdf/Rafael Santos Desenvolvedor.pdf" class="button" target="_blank">Abrir em Nova Aba</a>
+                    </div>
+                </div>
+            </div>
+                </section>
+            
+                <section id="contato">
+            <div class="contado1">
+                <h2>Contato</h2>
+                <p>Email: <a href="mailto:rafaelsantos.js30@gmail.com">rafaelsantos.js30@gmail.com</a>
+                </p>
+                <p class="texto">
+                    WhatsApp: <a href="https://wa.me/5511950965640" target="_blank">(11) 95096-5640</a> Recado:
+                    <strong>(11) 93228-3256</strong>
+                </p>
+            </div>
+            <div class="redes">
+                <h2>Redes Sociais</h2>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rafael-santos30/" target="_blank"><img src="/icones/linkedin.png"
+                            alt="LinkedIn" width="32" height="32"></a>
+                    <a href="https://www.instagram.com/dev_rafael01/" target="_blank"><img src="/icones/instagram.png"
+                            alt="instagram" width="32" height="32"></a>
+                    <a href="https://github.com/dev-rafael01" target="_blank"><img src="/icones/github.png" alt="github"
+                            width="32" height="32"></a>
+                    <a href="https://www.tiktok.com/@dev_rafael01" target="_blank"><img
+                            src="/icones/tiktok.png" alt="tiktok" width="32" height="32"></a>
+                </div>
+            </div>
+                </section>
+        </main>
+
+
+    <footer>
+        <p>&copy; 2025 RAFAEL SANTOS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

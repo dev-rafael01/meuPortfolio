@@ -1,0 +1,46 @@
+/* Para telas ultra-wide (16:9 até 32:9) */
+@media (min-aspect-ratio: 16/900) and (min-width: 1600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 1600;
+        height: 0px;
+    }
+
+    main {
+        width: 100%;
+        max-width: 3200px; /* Limite para telas grandes, ajuste conforme necessidade */
+        min-width: 1600px;
+        padding: 0 20px; /* Adicionando algum espaçamento lateral */
+    }
+
+    header {
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 3200px; /* Definindo o tamanho máximo para o header */
+        min-width: 1600px;        
+    }
+
+    /* === MENU DE CERTIFICADOS - TELAS GRANDES === */
+@media (min-aspect-ratio: 16/9) and (min-width: 1600px) {
+  #certificados-container.certificados-aberto {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .certificados-menu-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  #inicio h3 {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+}
